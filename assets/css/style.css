@@ -861,6 +861,11 @@ ul { padding: 0; list-style: none; }
   line-height: 1.85;
 }
 
+.section.reel-section {
+  padding-top: 1.6rem;
+  padding-bottom: 0.2rem;
+}
+
 .reel-embed {
   max-width: 27rem;
   margin: 0 auto;
