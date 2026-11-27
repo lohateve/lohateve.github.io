@@ -1,4 +1,4 @@
-/* 天母的優格｜首頁篩選：區域、總價、房數、車位、已售 */
+/* 天母的優格｜首頁篩選：區域、總價、房數、車位、建物類型、已售 */
 (function () {
   "use strict";
   var form = document.getElementById("filter-panel");
@@ -24,6 +24,7 @@
     var price = form.price.value;
     var rooms = form.rooms.value;
     var parking = form.parking.value;
+    var bclass = form.buildingClass ? form.buildingClass.value : "";
     var soldOk = showSold ? showSold.checked : false;
     var shown = 0;
     cards.forEach(function (c) {
@@ -39,6 +40,7 @@
         if (!c.dataset.parking) ok = false;
         else ok = c.dataset.parking === parking;
       }
+      if (ok && bclass && c.dataset.buildingClass !== bclass) ok = false;
       c.classList.toggle("is-hidden", !ok);
       c.hidden = !ok;
       if (ok) shown++;
@@ -49,7 +51,7 @@
     }
     if (result) result.textContent = "共 " + shown + " 間";
     if (count) count.textContent = shown + " 間";
-    var active = area || price || rooms || parking || soldOk;
+    var active = area || price || rooms || parking || bclass || soldOk;
     form.classList.toggle("is-active", !!active);
     if (toggle) toggle.classList.toggle("is-active", !!active);
   }

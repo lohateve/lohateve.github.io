@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=882d9882">
+  <link rel="stylesheet" href="assets/css/style.css?v=8adf3fb4">
   <script src="assets/js/filters.js" defer></script>
 </head>
 <body class="home">
@@ -71,6 +71,9 @@
             <option value="0">沒有車位</option>
           </select>
         </label>
+        <label class="filter-field"><span>建物類型</span>
+          <select name="buildingClass"><option value="">不限</option><option value="公寓">公寓</option><option value="華廈">華廈</option><option value="社區大樓">社區大樓</option></select>
+        </label>
         <div class="filter-foot">
           <p class="filter-result" data-filter-result></p>
           <label class="check-sold"><input type="checkbox" id="show-sold" name="sold">顯示已售</label>
@@ -81,7 +84,7 @@
     <section class="listings" id="listings" aria-live="polite">
       <a class="listing-card" data-listing href="listings/changhong-tianmu/index.html"
          data-area="士林" data-price="5100" data-rooms="3"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/changhong-tianmu/photo-01.jpg" alt="客廳沙發區，窗邊採光" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">士林</p>
@@ -92,7 +95,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/changyin/index.html"
          data-area="北投" data-price="3790" data-rooms="2"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/changyin/photo-01.jpg" alt="客廳餐廳與開放式廚房" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">北投</p>
@@ -103,7 +106,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/daziran/index.html"
          data-area="北投" data-price="2390" data-rooms="2"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/daziran/photo-01.jpg" alt="客廳望向陽台與山景" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">北投</p>
@@ -114,7 +117,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/guomei-xinyi/index.html"
          data-area="信義" data-price="40800" data-rooms="5"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/guomei-xinyi/photo-01.jpg" alt="毛胚客廳區，窗外有城市景觀" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">信義</p>
@@ -125,7 +128,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/jianan/index.html"
          data-area="松山" data-price="6580" data-rooms="3"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/jianan/photo-01.jpg" alt="客廳看出去，陽明山就在窗外" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">松山</p>
@@ -136,7 +139,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/jinhu/index.html"
          data-area="內湖" data-price="1750" data-rooms="3"
-         data-parking="0" data-status="sale">
+         data-parking="0" data-building-class="公寓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/jinhu/photo-01.jpg" alt="客廳與磁磚地板" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">內湖</p>
@@ -147,7 +150,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/tianmu-guoxiao/index.html"
          data-area="士林" data-price="2488" data-rooms="3"
-         data-parking="0" data-status="sale">
+         data-parking="0" data-building-class="公寓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/tianmu-guoxiao/photo-01.jpg" alt="客廳沙發區與電視牆" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">士林</p>
@@ -158,7 +161,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/xinmoshi/index.html"
          data-area="北投" data-price="1958" data-rooms="2"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/xinmoshi/photo-01.jpg" alt="窗邊看出去，整片山跟樹" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">北投</p>
@@ -169,7 +172,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/yuntian/index.html"
          data-area="北投" data-price="2588" data-rooms="2"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/yuntian/photo-01.jpg" alt="客廳" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">北投</p>
@@ -180,7 +183,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/zhishan-villa/index.html"
          data-area="士林" data-price="2780" data-rooms="1"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/zhishan-villa/photo-03.jpg" alt="客廳望向陽台與山景" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">士林</p>
@@ -191,7 +194,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/zhongcheng/index.html"
          data-area="士林" data-price="4980" data-rooms="4"
-         data-parking="0" data-status="sale">
+         data-parking="0" data-building-class="社區大樓" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/zhongcheng/photo-01.jpg" alt="客廳望向陽台，窗外一片綠" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">士林</p>
@@ -202,7 +205,7 @@
       </a>
       <a class="listing-card" data-listing href="listings/zhongjing/index.html"
          data-area="士林" data-price="4880" data-rooms="3"
-         data-parking="1" data-status="sale">
+         data-parking="1" data-building-class="華廈" data-status="sale">
         <div class="card-photo"><img src="assets/images/listings/zhongjing/photo-01.jpg" alt="客廳望向餐廳與廚房" width="1600" height="1000"><span class="card-overlay" aria-hidden="true"><span class="card-cta">看這間 <i>→</i></span></span></div>
         <div class="card-meta">
           <p class="loc">士林</p>
